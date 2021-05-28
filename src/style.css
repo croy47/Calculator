@@ -47,12 +47,13 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2px;
+  min-height: 70vh;
 }
 
 .button {
   font-family: "Source Sans Pro", sans-serif;
-  min-width: 1.3rem;
-  min-height: 3rem;
+  /* min-width: 1.3rem; */
+  min-height: 2.5rem;
   font-size: 2rem;
   cursor: pointer;
   /* background-color: #c6d7eb; */
@@ -81,41 +82,34 @@ button:active {
 #equals:hover {
   background-color: #009e60;
 }
-#icon-container {
-  text-align: center;
-  width: 60vw;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  background-color: grey;
-  font-weight: bolder;
-  margin-top: 20px;
-}
 
 /* MEDIA QUERY */
 @media screen and (max-width: 500px) {
   body {
     touch-action: manipulation;
     background: none;
+    display: block;
   }
 
   main {
-    min-width: 400px;
-    width: 98vw;
-    border: none;
+    width: 90vw;
+    overflow: hidden;
+    border: 3px solid black;
   }
 
   #full-display {
     min-height: 4rem;
     font-size: 1.7rem;
-    height: 30vh;
-    word-wrap: wrap;
+    height: 20vh;
+    word-wrap: break-word;
   }
 
   #buttonContainer {
-    height: 69vh;
+    height: 79vh;
+    gap: 0.5px;
+  }
+
+  .button {
+    font-size: 1.5rem;
   }
 }
