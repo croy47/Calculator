@@ -27,7 +27,7 @@ main {
 
 #full-display {
   min-height: 4.5rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   padding: 0 25px 10px 0;
   background-color: #322514;
   color: white;
@@ -39,7 +39,7 @@ main {
 }
 
 .display-muted {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: grey;
 }
 
@@ -47,13 +47,12 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2px;
-  min-height: 70vh;
 }
 
 .button {
   font-family: "Source Sans Pro", sans-serif;
-  /* min-width: 1.3rem; */
-  min-height: 2.5rem;
+  min-width: 1.3rem;
+  min-height: 3rem;
   font-size: 2rem;
   cursor: pointer;
   /* background-color: #c6d7eb; */
@@ -88,28 +87,23 @@ button:active {
   body {
     touch-action: manipulation;
     background: none;
-    display: block;
   }
 
   main {
-    width: 90vw;
-    overflow: hidden;
-    border: 3px solid black;
+    min-width: 400px;
+    width: 98vw;
+    border: 1px solid black;
   }
 
   #full-display {
     min-height: 4rem;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     height: 20vh;
-    word-wrap: break-word;
+    word-wrap: wrap;
   }
 
   #buttonContainer {
-    min-height: 79vh;
-    gap: 0.5px;
-  }
-
-  .button {
-    font-size: 1.5rem;
+    height: 79vh;
+    gap: 0px;
   }
 }
