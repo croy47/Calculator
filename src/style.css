@@ -18,25 +18,15 @@ body {
 main {
   border: 5px double black;
   background-color: bisque;
-  min-width: 400px;
+  min-width: 500px;
   font-family: "Source Sans Pro", sans-serif;
   /* border: 3px solid blue; */
-}
-
-@media screen and (max-width: 500px) {
-  body {
-    touch-action: manipulation;
-  }
-
-  main {
-    width: 100vw;
-  }
 }
 
 /* Display */
 
 #full-display {
-  min-height: 4rem;
+  min-height: 4.5rem;
   font-size: 1.5rem;
   padding: 0 25px 10px 0;
   background-color: #322514;
@@ -49,7 +39,7 @@ main {
 }
 
 .display-muted {
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: grey;
 }
 
@@ -62,7 +52,7 @@ main {
 .button {
   font-family: "Source Sans Pro", sans-serif;
   min-width: 1.3rem;
-  min-height: 1.7rem;
+  min-height: 3rem;
   font-size: 2rem;
   cursor: pointer;
   /* background-color: #c6d7eb; */
@@ -103,4 +93,29 @@ footer {
   background-color: grey;
   font-weight: bolder;
   margin-top: 20px;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 500px) {
+  body {
+    touch-action: manipulation;
+    background: none;
+  }
+
+  main {
+    min-width: 400px;
+    width: 98vw;
+    border: none;
+  }
+
+  #full-display {
+    min-height: 4rem;
+    font-size: 1.7rem;
+    height: 30vh;
+    word-wrap: wrap;
+  }
+
+  #buttonContainer {
+    height: 69vh;
+  }
 }

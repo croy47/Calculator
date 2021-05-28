@@ -8,13 +8,13 @@ const initialState = {
   calculated: "0",
   currentNum: "",
   operator: "",
+  encounteredError: false,
 };
 
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const captureClick = (key) => {
-    console.log(key);
     //SPECIAL OPERTATORS
     //________________________________________________
     //HANDLE NEGATIVE/POSITIVE
@@ -24,7 +24,6 @@ const AppProvider = ({ children }) => {
 
     //handle AC button
     if (key === "AC") {
-      console.log(key);
       return dispatch({ type: "CLEAR_DISPLAY" });
     }
     // HANDLE EQUAL(=) BUTTON
