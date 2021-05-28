@@ -105,7 +105,7 @@ button:active {
   }
 
   #buttonContainer {
-    height: 79vh;
+    min-height: 79vh;
     gap: 0.5px;
   }
 
