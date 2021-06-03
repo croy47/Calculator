@@ -27,9 +27,9 @@ main {
 
 #full-display {
   min-height: 4.5rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   padding: 0 25px 10px 0;
-  background-color: #322514;
+  background-color: black;
   color: white;
   display: grid;
   /* flex-direction: column; */
@@ -81,29 +81,61 @@ button:active {
 #equals:hover {
   background-color: #009e60;
 }
-
+.source-link {
+  color: white;
+  font-weight: 900;
+  font-size: 1.3rem;
+  display: grid;
+  place-items: center;
+}
+.source-link a {
+  color: black;
+}
 /* MEDIA QUERY */
+/* FOR MOBILE SCREEN */
 @media screen and (max-width: 500px) {
   body {
     touch-action: manipulation;
     background: none;
+    align-items: flex-start;
+    background-color: grey;
   }
 
   main {
-    min-width: 400px;
-    width: 98vw;
+    min-width: 200px;
+    width: 99vw;
     border: 1px solid black;
   }
 
   #full-display {
     min-height: 4rem;
-    font-size: 1.8rem;
+    font-size: 0.9rem;
     height: 20vh;
     word-wrap: wrap;
   }
+  .display-muted {
+    font-size: 0.6rem;
+    color: grey;
+  }
 
   #buttonContainer {
-    height: 79vh;
+    height: 70vh;
     gap: 0px;
+  }
+
+  .button {
+    min-width: 1rem;
+    min-height: 2rem;
+    font-size: 1rem;
+  }
+  .source-link {
+    display: grid;
+    height: 10vh;
+    place-items: center;
+    font-size: 0.7rem;
+    color: white;
+  }
+  .source-link a {
+    color: black;
   }
 }

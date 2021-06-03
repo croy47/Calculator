@@ -5,10 +5,22 @@ import { Display } from "./Display";
 
 function App() {
   return (
-    <main id="calculator">
-      <Display />
-      <ButtonContainer />
-    </main>
+    <div>
+      <main id="calculator">
+        <Display />
+        <ButtonContainer />
+      </main>
+      <p className="source-link">
+        <p>Designed by Chandan Roy</p>
+        <a
+          href="https://github.com/croy47/Calculator"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Source Code
+        </a>
+      </p>
+    </div>
   );
 }
 
