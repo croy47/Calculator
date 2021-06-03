@@ -31,7 +31,12 @@ export const Display = () => {
           ? "OVERFLOWED"
           : calculated}
       </div>
-      <div id="display" className="display-muted">
+      <div
+        id="display"
+        className={`display-muted ${
+          currentNum === "" && operator == "" ? "hide" : ""
+        }`}
+      >
         {encounteredError
           ? "press AC button"
           : overflowed

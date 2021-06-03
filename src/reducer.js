@@ -130,7 +130,7 @@ const reducer = (state, action) => {
         return {
           ...state,
           calculated: "0",
-          currentNum: "",
+          currentNum: "0",
           operator: "",
           encounteredError: false,
         };
