@@ -11,7 +11,7 @@ function App() {
         <ButtonContainer />
       </main>
       <p className="source-link">
-        <p>Designed by Chandan Roy</p>
+        <div>Designed by Chandan Roy</div>
         <a
           href="https://github.com/croy47/Calculator"
           target="_blank"

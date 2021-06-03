@@ -6,6 +6,7 @@
 
 const reducer = (state, action) => {
   const { calculated, currentNum, operator, encounteredError } = state;
+  state.equalToPressed = false;
   try {
     switch (action.type) {
       //NUMBER CAPTURED
@@ -72,6 +73,7 @@ const reducer = (state, action) => {
           currentNum: evaluated,
           operator: "",
           calculated: evaluated,
+          equalToPressed: true,
         };
 
       //TOGGLE

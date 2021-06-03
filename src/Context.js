@@ -9,6 +9,7 @@ const initialState = {
   currentNum: "",
   operator: "",
   encounteredError: false,
+  equalToPressed: false,
 };
 
 const AppProvider = ({ children }) => {

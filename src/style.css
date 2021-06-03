@@ -66,7 +66,7 @@ button:hover {
 }
 
 button:active {
-  transform: translateY(3px);
+  transform: translateY(1px);
 }
 
 #clear {
@@ -99,34 +99,37 @@ button:active {
     background: none;
     align-items: flex-start;
     background-color: grey;
+    overflow: hidden;
   }
 
   main {
     min-width: 200px;
     width: 99vw;
     border: 1px solid black;
+    overflow: hidden;
   }
 
   #full-display {
     min-height: 4rem;
-    font-size: 0.9rem;
+    font-size: 1.7rem;
     height: 20vh;
     word-wrap: wrap;
   }
   .display-muted {
-    font-size: 0.6rem;
+    font-size: 1rem;
     color: grey;
   }
 
   #buttonContainer {
     height: 70vh;
-    gap: 0px;
+    gap: 1px;
   }
 
   .button {
     min-width: 1rem;
     min-height: 2rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: 900;
   }
   .source-link {
     display: grid;
@@ -138,4 +141,8 @@ button:active {
   .source-link a {
     color: black;
   }
+}
+
+.hide {
+  visibility: hidden;
 }
