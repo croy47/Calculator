@@ -98,8 +98,8 @@ button:active {
     touch-action: manipulation;
     background: none;
     align-items: flex-start;
-    background-color: grey;
     overflow: hidden;
+    background-color: teal;
   }
 
   main {
@@ -112,7 +112,7 @@ button:active {
   #full-display {
     min-height: 4rem;
     font-size: 1.7rem;
-    height: 20vh;
+    height: 10vh;
     word-wrap: wrap;
   }
   .display-muted {
@@ -127,7 +127,7 @@ button:active {
 
   .button {
     min-width: 1rem;
-    min-height: 2rem;
+    min-height: 1.6rem;
     font-size: 1.5rem;
     font-weight: 900;
   }
@@ -135,11 +135,14 @@ button:active {
     display: grid;
     height: 10vh;
     place-items: center;
-    font-size: 0.7rem;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    font-family: sans-serif;
     color: white;
+    letter-spacing: 1px;
   }
   .source-link a {
-    color: black;
+    color: white;
   }
 }
 
